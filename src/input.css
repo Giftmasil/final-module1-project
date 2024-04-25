@@ -1,4 +1,4 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -22,7 +22,7 @@
 }
 
 .left-text-animation {
-    animation: left-text 3s ease 1s forwards;
+    animation: left-text 5s ease 1s forwards;
 }
 
 @keyframes left-text {
@@ -32,65 +32,31 @@
     80% {
         transform: translateX(1.2);
     }
-} */
-
- /*|| ABOUT PAGE*/
-
- img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    100% {
+        transform: translateX(0);
+    }
 }
 
+.right-text-animation {
+    animation: right-text 5s ease 1s forwards;
+}
 
-h2, h3 {
+@keyframes right-text {
+    0% {
+        transform: translateX(1000px);
+    }
+    80% {
+        transform: translateX(-1.2);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.offscreen {
+    transform: translateX(-10000px);
+}
+
+.oblique {
     font-style: oblique;
-}
-
-h2 {
-    font-size: 5rem;
-    text-align: center;
-}
-
-body {
-    font-size: 1.5rem;
-}
-
-.main__section-directed {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
-    background-color: rgba(62, 31, 91, 0.886) ;
-    color: black;
-}
-
-.main__figure {
-    background-color: rgb(28, 98, 28);
-    width: auto;
-    height: auto;
-    max-width: 90%;
-    max-height: 90%;
-    transform: translateX(1rem) rotate(3deg);
-}
-.main__figure img {
-    transform: rotate(-5deg);
-}
-
-.main__section-education {
-    background-color: bisque;
-    color: black;
-}
-
-.main__section-volunteer {
-    background-color: cadetblue;
-}
-
-footer {
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    gap: 1rem;
 }
