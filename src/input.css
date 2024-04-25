@@ -1,3 +1,125 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, 
+button, 
+textarea {
+    font: inherit;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 230, 230);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: larger;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 38px, 2.25rem);
+}
+
+nav {
+    width: 40vw;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a:any-link {
+    color: rgb(24, 22, 22);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    display: block;
+    color: rgb(172, 21, 21);
+    transform: scale(1.2);
+    transition: transform 0.5s ease forwards;
+}
+
+/*|| MAIN PAGE*/
+
+.main {
+    height: 100%;
+    width: auto;
+    flex-grow: 1;
+    background-color: rgb(92, 85, 85);
+    background-image: url("/img/home-image 1144x576.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.main__container {
+    height: 100vh;
+    width: auto;
+    background-color: rgba(44, 41, 41, 0.361);
+    color: rgb(238, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+.main__heading {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+}
+
+.main__view {
+    width: 5rem;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.main__twitter,.main__instagram {
+    font-size: larger;
+    position: absolute;
+    left: 1rem;
+    animation: 3s ease 0.5s forwards slide;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-1000px);
+    }
+}
+
+.main__twitter {
+    top: 10rem;
+}
+
+.main__instagram {
+    top: 12rem;
+}
+
+/*|| ABOUT PAGE*/
