@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -32,10 +32,18 @@
     80% {
         transform: translateX(1.2);
     }
-}
+} */
 
  /*|| ABOUT PAGE*/
-/*
+
+ img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 h2, h3 {
     font-style: oblique;
 }
@@ -45,8 +53,44 @@ h2 {
     text-align: center;
 }
 
+body {
+    font-size: 1.5rem;
+}
+
 .main__section-directed {
     display: flex;
+    flex-flow: column nowrap;
     gap: 2rem;
-    font-size: 2rem;
-} */
+    background-color: rgba(62, 31, 91, 0.886) ;
+    color: black;
+}
+
+.main__figure {
+    background-color: rgb(28, 98, 28);
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    transform: translateX(1rem) rotate(3deg);
+}
+.main__figure img {
+    transform: rotate(-5deg);
+}
+
+.main__section-education {
+    background-color: bisque;
+    color: black;
+}
+
+.main__section-volunteer {
+    background-color: cadetblue;
+}
+
+footer {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
