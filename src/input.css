@@ -2,68 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.img-animation:hover {
-    animation: image 5s ease 1s forwards;
-}
+@layer utilities {
+    a:hover {
+        display: block;
+        transform: scale(1.2);
+        transition: transform 0.5s forward;
+    }
+    
+    .oblique {
+        font-style: oblique;
+    }
 
-@keyframes image {
-    0% {
-        transform: translateX(0) rotate(0);
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
     }
-    33% {
-        transform: translateX(-100px) rotate(360deg);
-    }
-    66% {
-        transform: translateX(100px) rotate(-360deg);
-    }
-    100% {
-        transform: translateX(0) rotate(0);
-    }
-}
-
-.left-text-animation {
-    animation: left-text 5s ease 1s forwards;
-}
-
-@keyframes left-text {
-    0% {
-        transform: translateX(-1000px);
-    }
-    80% {
-        transform: translateX(1.2);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.right-text-animation {
-    animation: right-text 5s ease 1s forwards;
-}
-
-@keyframes right-text {
-    0% {
-        transform: translateX(1000px);
-    }
-    80% {
-        transform: translateX(-1.2);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-a:hover {
-    display: block;
-    transform: scale(1.2);
-    transition: transform 0.5s forward;
-}
-
-.left-text-animation a:hover {
-    transform: none;
-}
-
-
-.oblique {
-    font-style: oblique;
 }
