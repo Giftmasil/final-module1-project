@@ -10,10 +10,9 @@ module.exports = {
         '100%': { transform: 'scaleY(1)'},
         },
         'image': {
-          '0%': { transform: 'translateX(0) rotate(0)'},
-          '33%': { transform: 'translateX(-100px) rotate(360deg)'},
-          '66%': { transform: 'translateX(100px) rotate(-360deg)'},
-        '100%': { transform: 'translateX(0) rotate(0)'},
+          '0%': { transform: 'translateY(-1000px) rotate(0)'},
+          '80%': { transform: 'translateY(50px)'},
+        '100%': { transform: 'translateX(1) rotate(360)'},
         },
         'left-text': {
           '0%': { transform: 'translateX(-1000px)'},
@@ -28,7 +27,7 @@ module.exports = {
       },
       animation: {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
-        'img-animation': 'image 5s ease 0.5s forwards',
+        'img-animation': 'image 4s ease 0.5s forwards',
         'left-text': 'left-text 4.5s ease 0.5s forwards',
         'right-text': 'right-text 4.5s ease 0.5s forwards',
       },
