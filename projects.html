@@ -1,87 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projects</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
+  </head>
+  <body class="bg-gradient-to-b from-gray-700 to-gray-600 max-w-full">
+    <header
+      class="sticky top-0 z-50 bg-gray-200 max-w-full md:flex md:flex-row md:justify-evenly md:gap-y-1 md:p-5"
+    >
+      <section class="w-full md:flex md:flex-row justify-between">
+        <div class="flex justify-center md:justify-start">
+          <img
+            src="./img/home-image_576x576.jpg"
+            alt="Profile Picture"
+            class="w-4 h-4 md:w-10 md:h-10 rounded-full mr-3 mt-1 md:mt-0"
+          />
+          <h1 class="text-xl md:text-3xl font-bold">Gift Masila</h1>
+        </div>
 
-</head>
-<body class="bg-gradient-to-b from-gray-700 to-gray-600 max-w-full">
-    <header class="sticky top-0 z-50 bg-gray-200 max-w-full md:flex md:flex-row md:justify-evenly md:gap-y-1 md:p-5">
-        <section class="w-full md:flex md:flex-row justify-between">
-            <div class="flex justify-center md:justify-start">
-                <img src="./img/home-image_576x576.jpg" alt="Profile Picture" class="w-4 h-4 md:w-10 md:h-10 rounded-full mr-3 mt-1 md:mt-0">
-                <h1 class="text-xl md:text-3xl font-bold">Gift Masila</h1>
-            </div>
-            
-            <nav aria-label="main-nav" class="md:w-3/5">
-                <ul class="flex justify-evenly text-sm md:text-xl">
-                    <li><a href="index.html" class="text-gray-800 hover:text-red-700">Home</a></li>
-                    <li><a href="about.html" class="text-gray-800 hover:text-red-700">About</a></li>
-                    <li><a href="contact.html" class="text-gray-800 hover:text-red-700">Contact Me</a></li>
-                </ul>
-            </nav>
-            <button id="hamburger-button" class="md:hidden text-2xl cursor-pointer relative w-8 h-8">
-                <div class="bg-black w-8 h-1 rounded absolute z-50 top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
-            </button>
-            
-        </section>
-        <section id="mobile-menu" class="absolute top-68 bg-black text-slate-100 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-            <!-- <button class="text-8xl self-start px-6">
+        <nav aria-label="main-nav" class="md:w-3/5">
+          <ul class="flex justify-evenly text-sm md:text-xl">
+            <li>
+              <a href="index.html" class="text-gray-800 hover:text-red-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="text-gray-800 hover:text-red-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="text-gray-800 hover:text-red-700"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          id="hamburger-button"
+          class="md:hidden text-2xl cursor-pointer relative w-8 h-8"
+        >
+          <div
+            class="bg-black w-8 h-1 rounded absolute z-50 top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-black before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-black after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
+          ></div>
+        </button>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-68 bg-black text-slate-100 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <!-- <button class="text-8xl self-start px-6">
                 &times;
             </button> -->
-            <nav aria-label="mobile" class="flex flex-col min-h-screen items-center py-8">
-                <ul class="text-center">
-                    <li class="mb-8"><a href="#HTML" class="w-full text-center hover:text-red-700">HTML project</a></li>
-                    <li class="mb-8"><a href="#profile" class="w-full text-center hover:text-red-700">Profile-card project</a></li>
-                    <li class="mb-8"><a href="#CSS" class="w-full text-center hover:text-red-700">CSS project</a></li>
-                    <li class="mb-8"><a href="#tailwind" class="w-full text-center hover:text-red-700">Tailwind project</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav
+          aria-label="mobile"
+          class="flex flex-col min-h-screen items-center py-8"
+        >
+          <ul class="text-center">
+            <li class="mb-8">
+              <a href="#HTML" class="w-full text-center hover:text-red-700"
+                >HTML project</a
+              >
+            </li>
+            <li class="mb-8">
+              <a href="#profile" class="w-full text-center hover:text-red-700"
+                >Profile-card project</a
+              >
+            </li>
+            <li class="mb-8">
+              <a href="#CSS" class="w-full text-center hover:text-red-700"
+                >CSS project</a
+              >
+            </li>
+            <li class="mb-8">
+              <a href="#tailwind" class="w-full text-center hover:text-red-700"
+                >Tailwind project</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
-    <main>        
-        <section id="HTML" class="scroll-mt-20 p-6 bg-gradient-to-b from-amber-400 to-amber-200 mb-4 animate-left-text">
-            <h2 class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4">HTML Project</h2>
-            <p class="font-sans md:text-2xl mb-3">Hey, This is my first project ever coded in HTML. It contains minimal CSS for I did not know much at the time, I was eceentially learning about HTML and it has a table, nav element, lists, header, footer and forms.. It is eccentially a taco shop website containing the menu,about them, store hours and a way to contact them.</p>
-            <details class="text-center md:text-2xl">
-                <summary>Want to see the code?</summary>
-                <p><a href="https://github.com/Giftmasil/HTML-project" class="text-indigo-700  hover:text-red-700">GitHub link.</a></p>
-            </details>
-        </section>
-        <section id="profile" class="scroll-mt-20 p-6 bg-gradient-to-b from-lime-600 to-lime-500 mb-4 animate-right-text">
-            <h2 class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4">Profile-card</h2>
-            <p class="italic md:text-2xl mb-3">Hey, This is my first project ever coded in CSS. It contains minimal Javascript for I did not know much at the time, I was eceentially learning about HTML and it has a reset, utilities, media querries, colors. It is eccentially a portfolio page for employees containing there various cards.</p>
-            <details class="text-center md:text-2xl">
-                <summary>Want to see the code?</summary>
-                <p><a href="https://github.com/Giftmasil/profile-card-project" class="text-indigo-700  hover:text-red-700">Github link.</a></p>
-            </details>
-        </section>
-        <section id="CSS" class="scroll-mt-20 p-6 bg-gradient-to-b from-pink-700 to-pink-600 mb-4 animate-left-text">
-            <h2 class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4">CSS Project</h2>
-            <p class="font-serif md:text-2xl mb-3">Hey, This is my second project ever coded in CSS. It contains minimal Javascript for I did not know much at the time, I was eceentially learning about CSS and it has a reset, utilities, media querries, colors, animations, transformations pseudoelements. It is eccentially a toco shop website containing the menu,about them, store hours and a way to contact them but it is more styled than the previous version and it is device sensitive.</p>
-            <details class="text-center md:text-2xl">
-                <summary>Want to see the code?</summary>
-                <p><a href="https://github.com/Giftmasil/css-project" class="text-indigo-700  hover:text-red-700">Github link.</a></p>
-            </details>
-        </section>
-        <section id="tailwind" class="scroll-mt-20 p-6 bg-gradient-to-b from-neutral-700 to-neutral-600 mb-4 text-slate-50 animate-right-text">
-            <h2 class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4">Tailwind CSS</h2>
-            <p class="oblique md:text-2xl mb-3">Hey, This is my first project ever coded in Tailwind CSS. It contains minimal Javascript for I did not know much at the time, I was eceentially learning about Tailwind CSS and it has a reset, utilities, media querries, colors, animations, transformations pseudoelements but now in tailwind CSS. It is eccentially a Rocket Company cointaining a drop down navigation, a hamburger menu, quotes, and advertisement for the <strong>Acme Rockets Company</strong>.</p>
-            <br>
-            <details class="text-center md:text-2xl">
-                <summary>Want to see the code?</summary>
-                <p><a href="https://github.com/Giftmasil/tailwind-project" class="text-indigo-700  hover:text-red-700">Github link.</a></p>
-            </details>
-        </section>
+    <main>
+      <section
+        id="HTML"
+        class="scroll-mt-20 p-6 bg-gradient-to-b from-amber-400 to-amber-200 mb-4 animate-left-text"
+      >
+        <h2
+          class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4"
+        >
+          HTML Project
+        </h2>
+        <p class="font-sans md:text-2xl mb-3">
+          Hey, This is my first project ever coded in HTML. It contains minimal
+          CSS for I did not know much at the time, I was eceentially learning
+          about HTML and it has a table, nav element, lists, header, footer and
+          forms.. It is eccentially a taco shop website containing the
+          menu,about them, store hours and a way to contact them.
+        </p>
+        <details class="text-center md:text-2xl">
+          <summary>Want to see the code?</summary>
+          <p>
+            <a
+              href="https://github.com/Giftmasil/HTML-project"
+              class="text-indigo-700 hover:text-red-700"
+              >GitHub link.</a
+            >
+          </p>
+        </details>
+      </section>
+      <section
+        id="profile"
+        class="scroll-mt-20 p-6 bg-gradient-to-b from-lime-600 to-lime-500 mb-4 animate-right-text"
+      >
+        <h2
+          class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4"
+        >
+          Profile-card
+        </h2>
+        <p class="italic md:text-2xl mb-3">
+          Hey, This is my first project ever coded in CSS. It contains minimal
+          Javascript for I did not know much at the time, I was eceentially
+          learning about HTML and it has a reset, utilities, media querries,
+          colors. It is eccentially a portfolio page for employees containing
+          there various cards.
+        </p>
+        <details class="text-center md:text-2xl">
+          <summary>Want to see the code?</summary>
+          <p>
+            <a
+              href="https://github.com/Giftmasil/profile-card-project"
+              class="text-indigo-700 hover:text-red-700"
+              >Github link.</a
+            >
+          </p>
+        </details>
+      </section>
+      <section
+        id="CSS"
+        class="scroll-mt-20 p-6 bg-gradient-to-b from-pink-700 to-pink-600 mb-4 animate-left-text"
+      >
+        <h2
+          class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4"
+        >
+          CSS Project
+        </h2>
+        <p class="font-serif md:text-2xl mb-3">
+          Hey, This is my second project ever coded in CSS. It contains minimal
+          Javascript for I did not know much at the time, I was eceentially
+          learning about CSS and it has a reset, utilities, media querries,
+          colors, animations, transformations pseudoelements. It is eccentially
+          a toco shop website containing the menu,about them, store hours and a
+          way to contact them but it is more styled than the previous version
+          and it is device sensitive.
+        </p>
+        <details class="text-center md:text-2xl">
+          <summary>Want to see the code?</summary>
+          <p>
+            <a
+              href="https://github.com/Giftmasil/css-project"
+              class="text-indigo-700 hover:text-red-700"
+              >Github link.</a
+            >
+          </p>
+        </details>
+      </section>
+      <section
+        id="tailwind"
+        class="scroll-mt-20 p-6 bg-gradient-to-b from-neutral-700 to-neutral-600 mb-4 text-slate-50 animate-right-text"
+      >
+        <h2
+          class="text-center text-2xl md:text-5xl oblique font-semibold md:mb-4"
+        >
+          Tailwind CSS
+        </h2>
+        <p class="oblique md:text-2xl mb-3">
+          Hey, This is my first project ever coded in Tailwind CSS. It contains
+          minimal Javascript for I did not know much at the time, I was
+          eceentially learning about Tailwind CSS and it has a reset, utilities,
+          media querries, colors, animations, transformations pseudoelements but
+          now in tailwind CSS. It is eccentially a Rocket Company cointaining a
+          drop down navigation, a hamburger menu, quotes, and advertisement for
+          the <strong>Acme Rockets Company</strong>.
+        </p>
+        <br />
+        <details class="text-center md:text-2xl">
+          <summary>Want to see the code?</summary>
+          <p>
+            <a
+              href="https://github.com/Giftmasil/tailwind-project"
+              class="text-indigo-700 hover:text-red-700"
+              >Github link.</a
+            >
+          </p>
+        </details>
+      </section>
     </main>
-    
+
     <footer class="bg-blue-900 text-center sticky bottom-0 z-40 p-6">
-        <a href="#" class="hover:text-red-700">Back to top</a>
+      <a href="#" class="hover:text-red-700">Back to top</a>
     </footer>
-</body>
+  </body>
 </html>
