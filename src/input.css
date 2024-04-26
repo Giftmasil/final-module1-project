@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.img-animation {
+.img-animation:hover {
     animation: image 5s ease 1s forwards;
 }
 
