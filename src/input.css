@@ -6,7 +6,7 @@
     a:hover {
         display: block;
         transform: scale(1.2);
-        transition: transform 0.5s forward;
+        transition: transform 0.5s backwards;
     }
     
     .oblique {
